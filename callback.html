@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Обратная связь</title>
+</head>
+<body>
+<div class="form-container">
+    <h2>Обратная связь</h2>
+    <form action="#" method="post">
+        <label>Ваше имя: <input type="text" name="name" required></label>
+        <label>Email: <input type="email" name="email" required></label>
+        <label>Тема:
+            <select name="subject">
+                <option>Вопрос</option>
+                <option>Предложение</option>
+                <option>Жалоба</option>
+            </select>
+        </label>
+        <label>Сообщение: <textarea name="message" rows="5" required></textarea></label>
+
+        <fieldset>
+            <legend>Приоритет</legend>
+            <label><input type="radio" name="priority" value="low" checked> Низкий</label>
+            <label><input type="radio" name="priority" value="medium"> Средний</label>
+            <label><input type="radio" name="priority" value="high"> Высокий</label>
+        </fieldset>
+
+        <label>Приложить файл: <input type="file" name="attachment"></label>
+
+        <div class="buttons">
+            <button type="submit">Отправить</button>
+            <button type="reset">Очистить</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
