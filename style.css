@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.resume_block {
+    width: 50%;
+    height: 100%;
+}
+
+.resume_container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.my_photo {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.resume_block {
+    padding: 15px 80px 0 50px;
+    font-size: 20px;
+}
+
+.left-block {
+    background-color: transparent;
+}
+
+.right-block {
+    background-color: #5f4fd5;
+}
+
+.resume_item_prg {
+    padding-bottom: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.result_item_ul {
+    padding-bottom: 20px;
+    list-style: none;
+}
+
+.result_item_li {
+    background: #bcb5b5;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.contacts-item {
+    margin-left: 0;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.contacts-item a {
+    background-color: #194570;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.contacts-item a:hover {
+    background-color: #bc7605;
+}
+
+.resume-title {
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 36px;
+    text-align: center;
+    color: #194570;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #194570;
+    margin: 30px 0 20px 0;
+    padding-left: 15px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #ae5e18;
+    margin: 25px 0 15px 0;
+}
+
+table {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 30px 0;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: transparent;
+    padding: 8px;
+    color: #194570;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #d0d7de;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #194570;
+    color: white;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+.inline_block {
+    margin: 5px 50px 5px 50px;
+}
+
+.inline_block h3 {
+    font-size: 22px;
+    color: #ae5e18;
+    margin: 20px 0 10px;
+}
+
+.inline-demo {
+    margin: 40px 0 40px 50px;  
+}
+
+.table-wrapper {
+    margin: 30px 0 30px 50px;    
+}
+
+.links-section {
+    margin: 40px 0 40px 50px;   
+}
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.links-container a {
+    background: #ecf0f1;
+    padding: 8px 18px;
+    text-decoration: none;
+    color: #194570;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Резюме</title>
+</head>
+
+<body>
+    <!-- Задача  1-->
+    <div class="resume">
+        <h1 class="resume-title">Резюме</h1>
+        <div class="resume_container">
+            <div class="resume_block left-block">
+                <div class="resume-item"><strong>Имя</strong>: Владислав</div>
+                <div class="resume-item"><strong>Профессия</strong>: сеньер-девелопер</div>
+                <div class="resume-item">
+                    <p class="resume_item_prg">
+                        Мой интерес к IT начался не с игр, а с желания автоматизировать
+                        рутинные задачи: первым серьёзным проектом стал скрипт на Python,
+                        который сортировал хаотичную папку с файлами на учебном ноутбуке. С
+                        тех пор меня привлекает сама логика превращения хаоса в упорядоченную
+                        структуру. В отличие от простого использования гаджетов, программирование
+                        дарит ощущение контроля над сложностью — я люблю разбирать задачи на атомы,
+                        а затем собирать из них элегантное и надёжное решение.
+                    </p>
+                    <p class="resume_item_prg">
+                        За последние два года я сфокусировался на веб-разработке и Python.
+                        Владею основами алгоритмов и структур данных, умею работать с
+                        Git/SQL/REST API, а также оформлять чистый код, который не стыдно показать на ревью.
+                        Но ключевой навык, который я вынес из самостоятельных пет-проектов (Telegram-бот, дашборд),
+                        — это умение не бояться багов. Каждая ошибка в логах становится для меня задачей
+                        с детективным сюжетом, где нужно перебрать гипотезы, проверить граничные условия
+                        и в итоге довести продукт до рабочего состояния.
+                    </p>
+                    <p class="resume_item_prg">
+                        Я ищу в вузовском обучении не просто диплом, а системную базу и сообщество.
+                        Домашние туториалы дают быстрый результат, но именно фундаментальные
+                        дисциплины (дискретная математика, архитектура ЭВМ, операционные системы)
+                        превращают кодера в инженера. Кроме того, мне важна возможность участвовать
+                        в студенческих проектах и хакатонах, где можно учиться у более опытных
+                        коллег и коллективно решать реальные, а не учебные задачи. Я хочу приносить
+                        пользу команде, делиться знаниями и расти как специалист, который понимает,
+                        как технологии работают «под капотом».
+                    </p>
+                </div>
+                <div class="resume-item" id="skills">
+                    <ul class="result_item_ul"> <strong>Список навыков:</strong>
+                        <li class="result_item_li">Языки программирования: Python (продвинутый), SQL (средний), основы Java/C++</li>
+                        <li class="result_item_li">Веб-технологии: HTML/CSS, базовое понимание REST API, Flask/FastAPI</li>
+                        <li class="result_item_li">Инструменты и ОС: Git/GitHub, Linux (Ubuntu, базовые команды терминала), Docker (начальный уровень)</li>
+                        <li class="result_item_li">Базы данных: PostgreSQL, SQLite, написание сложных запросов JOIN</li>
+                        <li class="result_item_li">Аналитика и алгоритмы: базовые структуры данных (списки, деревья, хеш-таблицы), сортировки, поиск; умение читать чужой код</li>
+                    </ul>
+                </div>
+                <div class="resume-item" id="hobby">
+                    <ul class="result_item_ul"> <strong>Список хобби</strong>
+                        <li class="result_item_li">Open Source и пет-проекты — пишу маленькие утилиты для автоматизации (парсер расписания, бот для учёта привычек)</li>
+                        <li class="result_item_li">Шахматы и головоломки — развивают стратегическое мышление и усидчивость</li>
+                        <li class="result_item_li">Настольный теннис / бег — помогает переключаться после многочасового сидения за кодом</li>
+                        <li class="result_item_li">Чтение IT-блогов и научной фантастики — слежу за Хабрахабром, Tproger, читаю Лема и Азимова</li>
+                        <li class="result_item_li">Сборка и настройка ПК — интерес к «железу» и понимание, как код работает на физическом уровне</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h3>Контакты:</h3>
+                    <ul class="contacts-block">
+                        <li class="contacts-item"><a href="https://www.github.com/xxxjan0" target="_blank">Мой GitHub</a></li>
+                        <li class="contacts-item"><a href="https://www.youtube.com/@shpatel4964" target="_blank">YouTube канал Минаева</a></li>
+                        <li class="contacts-item"><a href="https://www.github.com/ninn1ku" target="_blank">GitHub Минаева</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume_block right-block">
+                <img src="photo.png" alt="Фото" class="my_photo">
+            </div>
+        </div>
+    </div>
+
+    <!-- Задача 2 -->
+    <div class="table-wrapper">
+        <table class="experience-table">
+            <caption>Опыт, обучение и проекты в IT</caption>
+            <thead>
+                <tr>
+                    <th>Тип</th>
+                    <th>Организация</th>
+                    <th>Период</th>
+                    <th>Роль</th>
+                    <th>Результат</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Обучение</td>
+                    <td>Курс «Python-разработчик с нуля»</td>
+                    <td>2024</td>
+                    <td>Python алгоритмы, работа с файлами</td>
+                    <td>Сертификат</td>
+                </tr>
+                <tr>
+                    <td>Проект</td>
+                    <td>Telegram-бот</td>
+                    <td>2024</td>
+                    <td>aiogram 3</td>
+                    <td>Бот активен</td>
+                </tr>
+                <tr>
+                    <td>Обучение</td>
+                    <td>Университетский курс «Базы данных»</td>
+                    <td>2025</td>
+                    <td>SQL</td>
+                    <td>Курсовая работа — спроектирована БД для книжного магазина</td>
+                </tr>
+                <tr>
+                    <td>Проект</td>
+                    <td>Парсер расписания для колледжа</td>
+                    <td>2026</td>
+                    <td>requests, BeautifulSoup</td>
+                    <td>Автоматический сбор и анализ данных, сокращает ручную работу на 80%</td>
+                </tr>
+                <tr>
+                    <td>Опыт работы (фриланс)</td>
+                    <td>Помощник верстальщика в веб-студии</td>
+                    <td>2020</td>
+                    <td>HTML, CSS, основы JS, Git</td>
+                    <td>Вёрстка 3 лендингов, командная работа в GitHub</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Задача 3-->
+    <div class="inline-demo">
+        <h2>Демонстрация inline и block элементов</h2>
+        <div class="inline_block">
+            <h3>Строчные элементы</h3>
+             <!-- расположатся в одну строку, если для них не задан display: block -->
+            <span>Элемент 1</span> <a href="#">Ссылка</a> <strong>Жирный</strong>
+
+            <h3>Блочные элементы</h3>
+             <!-- Каждый займёт всю ширину и перенесёт строку -->
+            <div>Блок 1</div><div>Блок 2</div><div>Блок 3</div>
+
+            <h3>Пример, где внутри абзаца есть строчные элементы</h3>
+            <p>Это абзац, внутри которого есть <span>строчный элемент</span> и <a href="#">ссылка</a>.</p>
+
+            <h3>Пример, где блоки визуально отделены друг от друга</h3>
+            <div style="border:1px solid #4f1a1a; margin-bottom:30px;">Блок 1</div>
+            <div style="border:1px solid #7a1b1b; margin-bottom:30px;">Блок 2</div>
+        </div>
+    </div>
+
+    <!-- Задача 4 -->
+    <div class="links-section">
+        <h2>Полезные ссылки</h2>
+        <div class="links-container">
+            <a href="https://github.com" target="_blank">GitHub (внешняя)</a>
+            <a href="https://stackoverflow.com" target="_blank">Stack Overflow (внешняя)</a>
+            <a href="#skills">Перейти к навыкам (внутренняя)</a>
+            <a href="#hobby">Перейти к хобби (внутренняя)</a>
+            <a href="mailto:example@domain.com">Написать мне (email)</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub в новой вкладке</a>
+        </div>
+    </div>
+</body>
+
+</html>
