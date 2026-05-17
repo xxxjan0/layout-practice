@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Регистрация</title>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Регистрация</h2>
+    <form action="#" method="post">
+        <label>Имя: <input type="text" name="firstname" required></label>
+        <label>Фамилия: <input type="text" name="lastname" required></label>
+        <label>Email: <input type="email" name="email" required></label>
+        <label>Телефон: <input type="tel" name="phone"></label>
+        <label>Пароль: <input type="password" name="password" required></label>
+        <label>Подтверждение пароля: <input type="password" name="password2" required></label>
+        <label>Дата рождения: <input type="date" name="birthdate"></label>
+        <fieldset>
+            <legend>Пол</legend>
+            <label><input type="radio" name="gender" value="male"> Мужской</label>
+            <label><input type="radio" name="gender" value="female"> Женский</label>
+        </fieldset>
+        <label><input type="checkbox" name="agree" required> Я согласен с условиями</label>
+        <div class="buttons">
+            <button type="submit">Отправить</button>
+            <button type="reset">Очистить</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
