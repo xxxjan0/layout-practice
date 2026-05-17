@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Анкета большая</title>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Анкета участника</h2>
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Личные данные</legend>
+            <label>Имя: <input type="text" name="firstname" required></label>
+            <label>Фамилия: <input type="text" name="lastname" required></label>
+            <label>Отчество: <input type="text" name="middlename"></label>
+            <label>Дата рождения: <input type="date" name="birthdate" required></label>
+            <label>Пол:
+                <select name="gender" required>
+                    <option value="">Выберите</option>
+                    <option>Мужской</option>
+                    <option>Женский</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Контакты</legend>
+            <label>Email: <input type="email" name="email" required></label>
+            <label>Телефон: <input type="tel" name="phone"></label>
+            <label>Telegram: <input type="text" name="telegram"></label>
+            <label>Город: <input type="text" name="city"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Предпочтения</legend>
+            <label>Любимый цвет: <input type="color" name="color"></label>
+            <label>Уровень владения ПК:
+                <input type="range" name="skill" min="0" max="100" value="50">
+            </label>
+            <label>Подписаться на рассылку: <input type="checkbox" name="subscribe"></label>
+            <label>Как узнали о нас:
+                <select name="source">
+                    <option>Интернет</option>
+                    <option>Друзья</option>
+                    <option>Реклама</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Дополнительная информация</legend>
+            <label>Комментарий: <textarea name="comment" rows="3"></textarea></label>
+            <label>Загрузить фото: <input type="file" name="photo"></label>
+            <label><input type="checkbox" name="agree" required> Я согласен на обработку данных</label>
+        </fieldset>
+
+        <div class="buttons">
+            <button type="submit">Отправить анкету</button>
+            <button type="reset">Сбросить всё</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
