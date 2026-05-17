@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: Arial;
+    background: #f2f2f2;
+    padding: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.demo-block {
+    background: #cfe8d5;
+    margin-bottom: 20px;
+}
+
+.block1 {
+    width: 200px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 0;
+}
+
+.block2 {
+    width: 200px;
+    border: 10px solid red;
+    margin: 20px;
+    padding: 20px;
+}
+
+.block3 {
+    width: 300px;
+    height: 150px;
+    border: 3px solid green;
+    margin: 30px;
+    padding: 10px;
+}
