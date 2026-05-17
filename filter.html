@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Фильтр</title>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Фильтр товаров</h2>
+    <form action="#" method="get">
+        <label>Поиск: <input type="text" name="search" placeholder="Введите название"></label>
+
+        <label>Категория:
+            <select name="category">
+                <option>Все</option>
+                <option>Электроника</option>
+                <option>Одежда</option>
+                <option>Книги</option>
+            </select>
+        </label>
+
+        <label>Сортировка:
+            <select name="sort">
+                <option>По умолчанию</option>
+                <option>Сначала дешёвые</option>
+                <option>Сначала дорогие</option>
+            </select>
+        </label>
+
+        <label>Цена от <input type="number" name="price_from" placeholder="0"> до <input type="number" name="price_to" placeholder="10000"></label>
+
+        <fieldset>
+            <legend>Бренды</legend>
+            <label><input type="checkbox" name="brand" value="apple"> Apple</label>
+            <label><input type="checkbox" name="brand" value="samsung"> Samsung</label>
+            <label><input type="checkbox" name="brand" value="xiaomi"> Xiaomi</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Наличие</legend>
+            <label><input type="radio" name="stock" value="all"> Все</label>
+            <label><input type="radio" name="stock" value="in"> Только в наличии</label>
+        </fieldset>
+
+        <div class="buttons">
+            <button type="submit">Применить</button>
+            <button type="reset">Сбросить</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
