@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>box-sizing</title>
+    <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+    <div class="container">
+        <div class="block content-box">
+            <h3>content-box</h3>
+            <p>width: 200px</p>
+            <p>padding: 20px</p>
+            <p>border: 5px solid</p>
+            <p>Итоговая ширина: 200 + 40 + 10 = 250px</p>
+        </div>
+        <div class="block border-box">
+            <h3>border-box</h3>
+            <p>width: 200px</p>
+            <p>padding: 20px</p>
+            <p>border: 5px solid</p>
+            <p>Итоговая ширина: 200px (включая padding и border)</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Оба блока объявлены с width: 200px. У content-box реальный размер больше из-за padding и border. У border-box размер остаётся 200px.</p>
+    </div>
+</body>
+</html>
