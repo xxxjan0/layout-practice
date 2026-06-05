@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff;
+    padding: 30px;
+}
+
+.task-section {
+    background: white;
+    border-radius: 24px;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+/*  Задача 1  */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.cat-card {
+    background: #f5f7f0;
+    border-radius: 16px;
+    padding: 30px 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #e0e0d4;
+    transition: 0.2s;
+}
+.cat-card:hover {
+    background: #eef2e0;
+}
+
+/* Задача 2  */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+}
+.gallery-item {
+    background: #eef2e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    font-size: 32px;
+    color: #5c7a1a;
+    border: 1px solid #cbd8b0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+/*  Задача 3  */
+.homepage {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "banner"
+        "advantages"
+        "catalog"
+        "reviews"
+        "footer";
+    gap: 20px;
+    background: #fefefe;
+    border-radius: 20px;
+    padding: 20px;
+}
+.hp-header {
+    grid-area: header;
+    background: #9cb123;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hp-header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.hp-header a:hover {
+    text-decoration: underline;
+}
+.hp-banner {
+    grid-area: banner;
+    background: #b8cc7a;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+.hp-banner button {
+    margin-top: 15px;
+}
+.hp-advantages {
+    grid-area: advantages;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.hp-advantages div {
+    background: #eef2e0;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 16px;
+    font-weight: bold;
+}
+.hp-catalog {
+    grid-area: catalog;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+.mini-card {
+    background: #fafaf0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+}
+.mini-card:hover {
+    background: #f0f2e0;
+}
+.hp-reviews {
+    grid-area: reviews;
+    background: #f9f1c0;
+    padding: 20px;
+    border-radius: 16px;
+}
+.hp-reviews div {
+    margin-bottom: 8px;
+}
+.hp-footer {
+    grid-area: footer;
+    background: #5c7a1a;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 16px;
+}
+.primary {
+    background: #79b224;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.primary:hover {
+    background: #689820;
+}
+
+/*  Задача 4  */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar stats"
+        "sidebar table"
+        "sidebar notifications"
+        "sidebar chart";
+    gap: 20px;
+}
+.db-sidebar {
+    grid-area: sidebar;
+    background: #eef2e0;
+    border-radius: 20px;
+    padding: 20px;
+}
+.db-header {
+    grid-area: header;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 15px;
+}
+.stats-area {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.stat {
+    background: #f5f7f0;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.db-table {
+    grid-area: table;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    padding: 20px;
+}
+.db-notifications {
+    grid-area: notifications;
+    background: #fef9e6;
+    border-radius: 16px;
+    padding: 20px;
+}
+.db-notifications ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.db-notifications li {
+    margin: 8px 0;
+}
+.db-chart {
+    grid-area: chart;
+    background: #eef2e0;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+/*  Задача 5 */
+.mixed-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.mix-card {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.mix-top {
+    background: #9cb123;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+.mix-bottom {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.mix-bottom h4 {
+    font-size: 20px;
+    color: #5c7a1a;
+}
+.mix-bottom p {
+    color: #333;
+    line-height: 1.4;
+}
+.mix-bottom button {
+    background: #79b224;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+.mix-bottom button:hover {
+    background: #689820;
+}
